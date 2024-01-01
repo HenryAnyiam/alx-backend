@@ -59,5 +59,8 @@ class Server:
             next = dataset.get(i)
             if not next:
                 i += 1
+            if i >= len(dataset):
+                i = None
+                break
         return {'index': index, 'next_index': i,
                 'page_size': len(data), 'data': data}
