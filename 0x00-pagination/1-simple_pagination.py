@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Implement a helper function"""
+"""Implement a helper functioni
+And handle pagination"""
 
 
 import csv
