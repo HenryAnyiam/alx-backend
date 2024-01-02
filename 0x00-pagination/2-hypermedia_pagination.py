@@ -35,9 +35,9 @@ class Server:
 
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
         """paginate dataset for particular data"""
-        assert isinstance(page, int) and\
-               page > 0 and isinstance(page_size, int)\
-               and page_size > 0
+        assert (isinstance(page, int) and
+                page > 0 and isinstance(page_size, int)
+                and page_size > 0)
         offset = index_range(page, page_size)
         try:
             return self.dataset()[offset[0]:offset[1]]
