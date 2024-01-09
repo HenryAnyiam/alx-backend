@@ -7,6 +7,7 @@
 		<h1>{{ gettext("home_header") }}</h1>
 		{% if user %}
 			<p>{{ gettext("logged_in_as", username=user.name) }}</p>
+			<p>{{ gettext("current_time_is", current_time=date) }}</p>
 		{% else %}
 			<p>{{ gettext('not_logged_in') }}</p>
 		{% endif %}
